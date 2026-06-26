@@ -4,6 +4,15 @@ url: "https://byunghochoi.github.io"
 baseurl: ""
 repository: "ByungHoChoi/ByungHoChoi.github.io"
 
+author:
+  name: "Byung Ho Choi"
+  bio: "AI computer system and system software engineer. I write about papers, systems, learning, and ordinary days."
+  location: "Seoul, Korea"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ByungHoChoi"
+
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "air"
 locale: "en-US"
@@ -21,7 +30,7 @@ defaults:
       type: "posts"
     values:
       layout: "single"
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: false
       share: false

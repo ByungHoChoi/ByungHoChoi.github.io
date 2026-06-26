@@ -2,6 +2,7 @@
 layout: single
 title: About
 permalink: /about/
+author_profile: true
 ---
 
 I am building this blog as a place to keep paper reviews, daily life notes, and

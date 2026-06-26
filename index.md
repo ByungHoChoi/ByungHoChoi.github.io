@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-author_profile: false
+author_profile: true
 ---
 
 This is a small working example of a personal Jekyll blog.

@@ -3,6 +3,7 @@ layout: archive
 title: Learning Progress
 permalink: /learning/
 category: learning
+author_profile: true
 ---
 
 Notes from things I am learning while building systems, software, and this site.

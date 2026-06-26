@@ -1,0 +1,34 @@
+{% if site.posts.size > 0 %}
+  <section class="sidebar-posts" aria-label="Posts by category">
+    <h3 class="sidebar-posts__title">Posts</h3>
+
+    {% assign preferred_categories = "papers,learning,life" | split: "," %}
+    {% for category_name in preferred_categories %}
+      {% assign category_posts = site.categories[category_name] %}
+      {% if category_posts %}
+        <div class="sidebar-posts__group">
+          {% case category_name %}
+            {% when "papers" %}
+              {% assign category_label = "Paper Reviews" %}
+            {% when "learning" %}
+              {% assign category_label = "Learning" %}
+            {% when "life" %}
+              {% assign category_label = "Daily Life" %}
+            {% else %}
+              {% assign category_label = category_name | capitalize %}
+          {% endcase %}
+
+          <h4 class="sidebar-posts__category">{{ category_label }}</h4>
+          <ul class="sidebar-posts__list">
+            {% for post in category_posts limit: 6 %}
+              <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+{% endif %}

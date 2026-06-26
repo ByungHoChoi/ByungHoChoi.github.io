@@ -3,6 +3,7 @@ layout: archive
 title: Paper Reviews
 permalink: /papers/
 category: papers
+author_profile: true
 ---
 
 Short reviews and notes from papers I read.

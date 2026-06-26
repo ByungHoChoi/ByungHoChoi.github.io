@@ -3,6 +3,7 @@ layout: archive
 title: Daily Life
 permalink: /life/
 category: life
+author_profile: true
 ---
 
 Small records from ordinary days.
