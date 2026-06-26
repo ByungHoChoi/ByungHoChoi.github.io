@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="intro">
+  <p class="eyebrow">Personal notebook</p>
+  <h1>{{ site.title }}</h1>
+  <div class="intro-copy">
+    {{ content }}
+  </div>
+</section>
+
+<section class="post-list" aria-label="Recent posts">
+  <div class="section-heading">
+    <h2>Recent notes</h2>
+    <span>{{ site.posts.size }} total</span>
+  </div>
+
+  {% for post in site.posts limit: 8 %}
+    <article class="post-row">
+      <a href="{{ post.url | relative_url }}">
+        <span class="post-kind">{{ post.categories | first }}</span>
+        <strong>{{ post.title }}</strong>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+      </a>
+    </article>
+  {% endfor %}
+</section>

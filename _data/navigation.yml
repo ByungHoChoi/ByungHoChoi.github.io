@@ -1,0 +1,9 @@
+main:
+  - title: "Papers"
+    url: /papers/
+  - title: "Life"
+    url: /life/
+  - title: "Learning"
+    url: /learning/
+  - title: "About"
+    url: /about/

@@ -1,0 +1,35 @@
+title: "BH Choi"
+description: "Paper reviews, daily notes, and learning logs."
+url: "https://byunghochoi.github.io"
+baseurl: ""
+repository: "ByungHoChoi/ByungHoChoi.github.io"
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "air"
+locale: "en-US"
+search: true
+breadcrumbs: true
+
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: true
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - examples/
+  - vendor/
