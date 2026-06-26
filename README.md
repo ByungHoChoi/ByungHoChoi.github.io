@@ -2,6 +2,10 @@
 
 This is a Jekyll blog using the Minimal Mistakes theme.
 
+Come here!
+
+https://byunghochoi.github.io/
+
 ## How Jekyll Works
 
 1. You write content in Markdown files.
