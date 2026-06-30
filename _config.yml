@@ -1,12 +1,13 @@
 title: "최병호의 블로그"
 description: "Lifes like ..."
-url: "https://byunghochoi.github.io/"
+url: "https://byunghochoi.github.io"
 baseurl: ""
 repository: "ByungHoChoi/ByungHoChoi.github.io"
 
 author:
-  name: "Byung Ho Choi"
-  bio: "AI computer system and system software engineer. I write about papers, systems, learning, and ordinary days."
+  name: "bhchoi"
+  avatar: "/assets/image_profile/1_p6ClFuTDD-iqvcTTdX1DHA.jpeg"
+  bio: "AI, Computer System"
   location: "Seoul, Korea"
   links:
     - label: "GitHub"
